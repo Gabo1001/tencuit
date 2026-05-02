@@ -3,7 +3,7 @@
 /*******************************/
 body {
     color: #666666;
-    background: #dddddd;
+    background: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -14,16 +14,16 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #030f27;
+    color: #ffffff;
 }
 
 a {
-    color: #666666;
+    color: #666666; 
     transition: .3s;
 }
 
 a:hover,
-a:active,
+a:active,   
 a:focus {
     color: #6599FF;
     outline: none;
@@ -70,84 +70,98 @@ a:focus {
 .btn {
     transition: .3s;
 }
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #000; 
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    border: 2px solid transparent;
+}
+
+.social-btn i {
+    font-size: 25px;
+    transition: all 0.3s ease;
+    color: #fff; 
+}
+
+.social-btn.instagram:hover, .social-btn.instagram:active {
+    background-color: #fff;
+    border-color: #E1306C;
+}
+.social-btn.instagram:hover i { color: #E1306C; }
 
 
-/**********************************/
-/********** Top Bar CSS ***********/
-/**********************************/
+.social-btn.whatsapp:hover, .social-btn.whatsapp:active {
+    background-color: #fff;
+    border-color: #25D366;
+}
+.social-btn.whatsapp:hover i { color: #25D366; }
+
+
+.social-btn.viber:hover, .social-btn.viber:active {
+    background-color: #fff;
+    border-color: #7360F2;
+}
+.social-btn.viber:hover i { color: #7360F2; }
+
+.social-btn.tiktok:hover, .social-btn.tiktok:active {
+    background-color: #fff;
+    border-color: #000;
+}
+.social-btn.tiktok:hover i { color: #000; }
+
+
+@media (max-width: 991.98px) {
+    .social-btn {
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+    }
+    .social-btn i {
+        font-size: 18px;
+    }
+}
 .top-bar {
     position: relative;
-    height: 90px;
-    background: #6599FF;
-}
-
-.top-bar .logo {
-    padding: 15px 0;
-    text-align: left;
-    overflow: hidden;
-}
-
-.top-bar .logo h1 {
-    margin: 0;
-    color: #030f27;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 700;
+    min-height: 120px;
+    background: #6599FF; 
+    padding: 10px 0;
 }
 
 .top-bar .logo img {
     max-width: 100%;
-    max-height: 60px;
+    max-height: 80px; 
 }
 
-.top-bar .top-bar-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
-.top-bar .top-bar-icon {
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.top-bar .top-bar-text h3 { margin: 0; font-size: 14px; font-weight: 700; text-transform: uppercase; color: #ffffff; }
+.top-bar .top-bar-text h6 { margin: 0; font-size: 12px; color: #ffffff; }
+.top-bar .top-bar-text a { font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none; }
+.hello-txt{
+    background-color: #6599FF;
 }
-
-.top-bar .top-bar-icon [class^="flaticon-"]::before {
-    margin: 0;
-    color: #030f27;
-    font-size: 40px;
+.hello-txt h1{
+    font-size: 30px !important;
 }
-
-.top-bar .top-bar-text {
-    padding-left: 15px;
-}
-
-.top-bar .top-bar-text h3 {
-    margin: 0 0 5px 0;
-    color: #030f27;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.top-bar .top-bar-text p {
-    margin: 0;
-    color: #030f27;
-    font-size: 13px;
-    font-weight: 400;
+.hello-txt p{
+    font-size: 20px !important;
 }
 
 @media (min-width: 992px) {
-    .top-bar {
-        padding: 0 60px;
+    .top-bar .top-bar-text {
+        padding-left: 10px;
+    }
+    .top-bar-item {
+        justify-content: flex-end !important;
     }
 }
 
-@media (max-width: 991.98px) {
-    .top-bar .logo {
-        text-align: center;
-    }
-}
 
 
 /**********************************/
@@ -696,16 +710,19 @@ a:focus {
 }
 
 .fact .fact-left {
-    color: #6599FF;
-    background: #030f27;
-}
-
-.fact .fact-right {
     color: #030f27;
     background: #6599FF;
 }
 
+.fact .fact-right {
+    color: #6599FF;
+    background: #030f27;
+}
+
 .fact .fact-left h2 {
+    color: #030f27;
+}
+.fact .fact-right h2 {
     color: #6599FF;
 }
 
@@ -2283,3 +2300,9 @@ a:focus {
 .label-custom { 
     font-weight: 600; 
     color: #495057; }
+
+
+.second{
+    padding: 20px 0;
+    background-color: #6599FF;
+}

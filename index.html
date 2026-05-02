@@ -25,91 +25,148 @@
 
     <body>
         <div class="wrapper">
-            <div class="top-bar">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo-black.png" alt="Mixokret RR Grup">
-                                </a>
-                            </div>
+           <div class="top-bar">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12">
+                <div class="row align-items-center">
+                    <div class="col-6 col-lg-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo-white.png" alt="Mixokret RR Grup">
+                            </a>
                         </div>
-                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="top-bar-item">
-                                        <div class="top-bar-icon">
-                                            <i class="flaticon-calendar"></i>
-                                        </div>
-                                        <div class="top-bar-text">
-                                            <h3>Program Lucru</h3>
-                                            <p>Lun - Vin, 8:00 - 18:00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="top-bar-item">
-                                        <div class="top-bar-icon">
-                                            <i class="flaticon-call"></i>
-                                        </div>
-                                        <div class="top-bar-text">
-                                            <h3>Contactează-ne</h3>
-                                            <a href=""><p>+373 61 244 421</p></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="top-bar-item">
-                                    
-                                        <div class="top-bar-text" style="font-size: 25px;">
-                                            <h3>Oferta</h3>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                            <a href=""><i class="fab fa-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-6 col-lg-6">
+                        <div class="top-bar-item justify-content-start hourss">
+                            <div class="top-bar-text">
+                                <h3>Program Lucru</h3>
+                                <h6>Lun - Vin, 8:00 - 18:00</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-8 col-md-12 mt-3 mt-lg-0">
+                <div class="row align-items-center justify-content-lg-end">
+                    <div class="col-6 col-lg-auto mr-lg-4">
+                        <div class="top-bar-item justify-content-start">
+                            <div class="top-bar-text p-0">
+                                <div class="social-links d-flex flex-row align-items-center">
+    <a href="#" class="social-btn instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" class="social-btn whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" class="social-btn viber">
+        <i class="fab fa-viber"></i>
+    </a>
+    <a href="#" class="social-btn tiktok">
+
+    </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-auto">
+                        <div class="top-bar-item justify-content-end">
+                            <div class="top-bar-text text-right text-lg-left">
+                                <h3>Contactează-ne</h3>
+                                <a href="tel:061244421" class="text-dark font-weight-bold">061 244 421</a><br>
+                                <a href="tel:069231258" class="text-dark font-weight-bold">069 231 258</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+             
+
+
+<!--https://docs.google.com/spreadsheets/d/18SN4q7FrToCAN_wurU9ctHkTHZXOefjzGmUOLKgEn5k/edit?gid=0#gid=0-->
+    <div class=" hello-txt">
+        <div class="text-center ">
+            <h1>Tencuit tradițional mecanizat</h1>
+        </div>
+    </div>
             <div class="card-section">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card calculator-card p-4">
-                         <div class="card-header">
-        <h4 class="text-center mb-4">Calculator Dinamic</h4>
-        </div>
-        <label>Selectează Serviciu 1:</label>
-        <select id="t1" class="form-control mb-3" onchange="resetButon()"></select>
+                            <div class="card-header">
+                                <h4 class="text-center mb-4">Calculator preț m²</h4>
+                            </div>
 
-        <label>Selectează Serviciu 2:</label>
-        <select id="t2" class="form-control mb-3" onchange="resetButon()"></select>
+                            <label id="lbl-t1">Selectează Serviciu 1:</label>
+                            <select id="t1" class="form-control mb-3" onchange="resetButon()"></select>
 
-        <label>Valoare Manuală 1:</label>
-        <input type="number" id="t3" class="form-control mb-3" oninput="resetButon()">
+                            <label id="lbl-t2">Selectează Serviciu 2:</label>
+                            <select id="t2" class="form-control mb-3" onchange="resetButon()"></select>
 
-        <label>Valoare Manuală 2:</label>
-        <input type="number" id="t4" class="form-control mb-4" oninput="resetButon()">
+                            <label id="lbl-t3">Valoare Manuală 1:</label>
+                            <input type="number" id="t3" class="form-control mb-3" oninput="resetButon()" min="0">
 
-        <div id="action-area">
-            <button id="btn-calcul" onclick="afiseazaPret()" class="btn btn-primary btn-block">AFLĂ PREȚUL</button>
-            <div id="rezultat-container">
-                <small>TOTAL:</small>
-                <h2 id="suma-finala" class="text-success">0.00 RON</h2>
-            </div>
-        </div>
-    </div>
+                            <label id="lbl-t4">Valoare Manuală 2:</label>
+                            <input type="number" id="t4" class="form-control mb-4" oninput="resetButon()" min="0">
+
+                            <div id="action-area">
+                                <button id="btn-calcul" onclick="afiseazaPret()" class="btn btn-primary btn-block">AFLĂ PREȚUL</button>
+                                <div id="rezultat-container" style="display:none; margin-top:15px;">
+                                    <small>TOTAL:</small>
+                                    <h2 id="suma-finala" class="text-success">0.00 MDL</h2>
+                                </div>
+                            </div>
+                            <p><small>*Prețul este estimativ</small></p>
+                        </div>
+
+                        <div style="margin-top:10px;">
+                            <a href="tel:061244421" class="btn btn-block font-weight-bold py-3" style="font-size: 1.2rem;background-color: #6599FF;color:#fff;">
+                                <i class="fas fa-phone-alt mr-2"></i> CONTACTEAZĂ-NE
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-         
+
+                    <!-- FORMULAR — trimite prin POST la procesare_contact.php -->
+                    <div class="col-md-6 contact-form-section" style="background-color:#fff; padding: 20px; border-radius: 10px;">
+                        <h4 class="mb-4">Solicită Ofertă Personalizată</h4>
+
+                        <div id="alert-success" class="alert alert-success" style="display:none;">
+                            ✅ Mesajul a fost trimis! Vă vom contacta în curând.
+                        </div>
+                        <div id="alert-error" class="alert alert-danger" style="display:none;">
+                            ❌ Eroare la trimitere. Sunați la 061 244 421.
+                        </div>
+
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label>Gmail / Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="exemplu@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Suprafață (m²)</label>
+                                <input type="number" name="suprafata" class="form-control" placeholder="Ex: 150" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Ce trebuie să facem?</label>
+                                <textarea name="detalii" class="form-control" rows="4" placeholder="Descrie lucrarea..." required></textarea>
+                            </div>
+                            <button type="submit" id="btn-send" class="btn btn-primary btn-block" style="background-color: #f7b205; border: none;">
+                                TRIMITE CEREREA
+                            </button>
+                        </form>
                     </div>
-                </div>
+                </div><!--de creat exemple calculate de lucrari 3 sau 4 3 randuir sau 2 randuri 2 coloane-->
     
 </div>
-
-            <div class="fact">
+ <!-- de adaugat carusel ca la websco.dev cu logourile la toate companiile-->
+  <!--de adaugat o forma de email PHP si de introdus si o pagina pentru admin unde de introdus taote preturile formula si poate si mesajele venite -->
+  <!--de schimbat in #fff tot textul -->          
+  
+  <div class="fact">
                 <div class="container-fluid">
                     <div class="row counters">
                         <div class="col-md-6 fact-left wow slideInLeft">
@@ -119,7 +176,7 @@
                                         <i class="flaticon-calendar"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">15</h2>
+                                        <h2 data-toggle="counter-up">5</h2>
                                         <p>Ani în domeniu</p>
                                     </div>
                                 </div>
@@ -128,8 +185,8 @@
                                         <i class="flaticon-building"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">485</h2>
-                                        <p>Clienți Fericiți</p>
+                                        <h2 data-toggle="counter-up">150</h2>
+                                        <p>Șantiere executate</p>
                                     </div>
                                 </div>
                             </div>
@@ -141,8 +198,8 @@
                                         <i class="flaticon-address"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2>MOLDOVA</h2>
-                                        <p>Livrare națională</p>
+                                        
+                                        <p style="font-size: 20px;">Servicii accesibile în toat Moldova</p>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -150,8 +207,8 @@
                                         <i class="flaticon-crane"></i>
                                     </div>
                                     <div class="fact-text">
-                                        <h2 data-toggle="counter-up">890</h2>
-                                        <p>Utilaje Vândute</p>
+                                        <h2 >6 ECHIPE</h2>
+                                        <p>ÎN ACȚIUNE SIMULTAN</p>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +217,7 @@
                 </div>
             </div>
             
-            <div class="service" id="service-scroll">
+           <div class="service" id="service-scroll">
     <div class="container">
         <div class="section-header text-center">
             <p>Serviciile Noastre</p>
@@ -170,7 +227,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="service-img">
-                        <img src="img/service-1.jpg" alt="Tencuială Tradițională">
+                        <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block;">
+                            <source src="video-renat-2.MOV" type="video/mp4">
+                            Browserul tău nu suportă formatul video.
+                        </video>
                         <div class="service-overlay">
                             <p>
                                 Echipa TENCUIT execută lucrări de tencuială tradițională la nivel profesional, combinând măiestria clasică cu eficiența pompelor de înaltă performanță.
@@ -179,7 +239,7 @@
                     </div>
                     <div class="service-text">
                         <h3>Tencuială Tradițională</h3>
-                        <a class="btn" href="img/service-1.jpg" data-lightbox="service">+</a>
+                        <a class="btn" href="video/service-1.mp4" data-lightbox="service">+</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +247,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="service-item">
                     <div class="service-img">
-                        <img src="img/service-2.jpg" alt="Vânzări Pompe">
+                        <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block;">
+                            <source src="video-renat-1.mp4" type="video/mp4">
+                            Browserul tău nu suportă formatul video.
+                        </video>
                         <div class="service-overlay">
                             <p>
                                 TENCUIT comercializează o gamă variată de pompe (beton, șapă, tencuit) de proveniență germană, oferind cel mai bun raport calitate-preț de pe piață.
@@ -196,7 +259,7 @@
                     </div>
                     <div class="service-text">
                         <h3>Vânzări Pompe</h3>
-                        <a class="btn" href="img/service-2.jpg" data-lightbox="service">+</a>
+                        <a class="btn" href="video/service-2.mp4" data-lightbox="service">+</a>
                     </div>
                 </div>
             </div>
@@ -204,7 +267,10 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="service-item">
                     <div class="service-img">
-                        <img src="img/service-3.jpg" alt="Consultanță Tehnică">
+                        <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block;">
+                            <source src="video-renat-1.mp4" type="video/mp4">
+                            Browserul tău nu suportă formatul video.
+                        </video>
                         <div class="service-overlay">
                             <p>
                                 Beneficiați de expertiza specialiștilor TENCUIT pentru alegerea echipamentelor potrivite și optimizarea proceselor tehnologice în șantier.
@@ -213,84 +279,14 @@
                     </div>
                     <div class="service-text">
                         <h3>Consultanță Tehnică</h3>
-                        <a class="btn" href="img/service-3.jpg" data-lightbox="service">+</a>
+                        <a class="btn" href="video/service-3.mp4" data-lightbox="service">+</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-            <div class="faqs" id="faqs-scroll">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <p>Întrebări Frecvente</p>
-                        <h2>Informații Utile</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div id="accordion-1">
-                                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                                            Ce este tencuiala mecanizată?
-                                        </a>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Este o metodă modernă de aplicare a mortarului folosind utilaje speciale, asigurând o viteză de lucru sporită și o suprafață perfect netedă.
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                                            Sunteți dealer Mortel Meister?
-                                        </a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Da, SRL Mixokret RR Grup este dealer oficial în Republica Moldova al companiei Mortel Meister, furnizând utilaje și piese de schimb.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div id="accordion-2">
-                                <div class="card wow fadeInRight" data-wow-delay="0.1s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapse3">
-                                            Ce este tencuiala mecanizată?
-                                        </a>
-                                    </div>
-                                    <div id="collapse3" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Este o metodă modernă de aplicare a mortarului folosind utilaje speciale, asigurând o viteză de lucru sporită și o suprafață perfect netedă.
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
-                                    <div class="card-header">
-                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapse4">
-                                            Sunteți dealer Mortel Meister?
-                                        </a>
-                                    </div>
-                                    <div id="collapse4" class="collapse" data-parent="#accordion-2">
-                                        <div class="card-body">
-                                            Da, SRL Mixokret RR Grup este dealer oficial în Republica Moldova al companiei Mortel Meister, furnizând utilaje și piese de schimb.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+<div class="feature wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-12">
@@ -329,6 +325,81 @@
                     </div>
                 </div>
             </div>
+       <div class="faqs" id="faqs-scroll">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Întrebări Frecvente</p>
+            <h2>Informații Utile</h2>
+        </div>
+        <div class="row" id="main-accordion">
+            <div class="col-md-6">
+                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="card-header">
+                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                            Ce materiale folosim?
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-parent="#main-accordion">
+                        <div class="card-body">
+                            Pentru a garanta o calitate superioară, utilizăm doar materiale de top:
+                            <ul>
+                                <li>Nisip spălat;</li>
+                                <li>Var tehnic hidratat;</li>
+                                <li>Ciment Lafarge;</li>
+                                <li>Plastificator;</li>
+                                <li>Fibră de polipropilenă</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="card-header">
+                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                            Unde livrăm serviciile noastre?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#main-accordion">
+                        <div class="card-body">
+                            Echipa noastră este mobilă și oferă servicii de tencuială mecanizată peste tot în Moldova.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="card-header">
+                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
+                            Ce este tencuiala mecanizată?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#main-accordion">
+                        <div class="card-body">
+                            Este o metodă modernă și rapidă de aplicare a mortarului folosind utilaje profesionale, asigurând o viteză de lucru sporită și o suprafață perfect netedă.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="card-header">
+                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
+                            În cât timp primesc un răspuns la ofertă?
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-parent="#main-accordion">
+                        <div class="card-body">
+                            Analizăm fiecare solicitare cu atenție. Veți primi un răspuns oficial sau o ofertă personalizată în maximum 24 de ore lucrătoare.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            
             
             <div class="footer wow fadeIn" id="footer-scroll" data-wow-delay="0.3s">
                 <div class="container">
@@ -387,5 +458,112 @@
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+        // ── Calculator: încarcă config din get_config.php (admin live) ──
+        var configCalc = null;
+
+        function incarcaConfig() {
+            fetch('get_config.php?v=' + Date.now())
+                .then(function(r){ return r.json(); })
+                .then(function(data){
+                    configCalc = data;
+                    aplicaConfig(data);
+                })
+                .catch(function(){
+                    aplicaConfig(configDefault());
+                });
+        }
+
+        function configDefault() {
+            return {
+                lbl_t1: "Selectează Serviciu 1:", lbl_t2: "Selectează Serviciu 2:",
+                lbl_t3: "Grosime strat (mm):", lbl_t4: "Distanță transport (km):",
+                optiuni_t1: ["Interior", "Exterior"],
+                optiuni_t2: ["Sub 100 m²", "100 - 300 m²", "Peste 300 m²"],
+                pret_baza: 120,
+                coef_t1: {"Interior": 1.0, "Exterior": 1.2},
+                coef_t2: {"Sub 100 m²": 1.3, "100 - 300 m²": 1.1, "Peste 300 m²": 1.0},
+                coef_t3: 0.5, coef_t4: 2.0, moneda: "MDL"
+            };
+        }
+
+        function aplicaConfig(data) {
+            document.getElementById('lbl-t1').textContent = data.lbl_t1 || "Selectează Serviciu 1:";
+            document.getElementById('lbl-t2').textContent = data.lbl_t2 || "Selectează Serviciu 2:";
+            document.getElementById('lbl-t3').textContent = data.lbl_t3 || "Valoare Manuală 1:";
+            document.getElementById('lbl-t4').textContent = data.lbl_t4 || "Valoare Manuală 2:";
+            populateSelect('t1', data.optiuni_t1 || []);
+            populateSelect('t2', data.optiuni_t2 || []);
+        }
+
+        function populateSelect(id, optiuni) {
+            var sel = document.getElementById(id);
+            var val = sel.value;
+            sel.innerHTML = '';
+            optiuni.forEach(function(opt) {
+                var o = document.createElement('option');
+                o.value = opt; o.textContent = opt;
+                sel.appendChild(o);
+            });
+            if (val && optiuni.indexOf(val) !== -1) sel.value = val;
+        }
+
+        function resetButon() {
+            document.getElementById('btn-calcul').style.display = 'block';
+            document.getElementById('rezultat-container').style.display = 'none';
+        }
+
+        function afiseazaPret() {
+            if (!configCalc) { alert("Configurația nu s-a încărcat. Reîncarcați pagina."); return; }
+            var t1 = document.getElementById('t1').value;
+            var t2 = document.getElementById('t2').value;
+            var t3 = parseFloat(document.getElementById('t3').value) || 0;
+            var t4 = parseFloat(document.getElementById('t4').value) || 0;
+            var c = configCalc;
+            var c1 = (c.coef_t1 && c.coef_t1[t1]) ? c.coef_t1[t1] : 1;
+            var c2 = (c.coef_t2 && c.coef_t2[t2]) ? c.coef_t2[t2] : 1;
+            var total = (c.pret_baza || 100) * c1 * c2 + t3 * (c.coef_t3 || 0) + t4 * (c.coef_t4 || 0);
+            document.getElementById('suma-finala').textContent = total.toFixed(2) + ' ' + (c.moneda || 'MDL');
+            document.getElementById('btn-calcul').style.display = 'none';
+            document.getElementById('rezultat-container').style.display = 'block';
+        }
+
+        // ── Formular: AJAX → procesare_contact.php ──
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var btn = document.getElementById('btn-send');
+            btn.disabled = true; btn.textContent = 'Se trimite...';
+            var fd = new FormData(this);
+            fetch('procesare_contact.php', { method: 'POST', body: fd })
+                .then(function(r){ return r.json(); })
+                .then(function(data) {
+                    if (data.success) {
+                        document.getElementById('alert-success').style.display = 'block';
+                        document.getElementById('alert-error').style.display = 'none';
+                        document.getElementById('contact-form').reset();
+                    } else {
+                        document.getElementById('alert-error').style.display = 'block';
+                        document.getElementById('alert-error').textContent = '❌ ' + (data.message || 'Eroare.');
+                        document.getElementById('alert-success').style.display = 'none';
+                    }
+                })
+                .catch(function(){
+                    document.getElementById('alert-error').style.display = 'block';
+                    document.getElementById('alert-success').style.display = 'none';
+                })
+                .finally(function(){
+                    btn.disabled = false; btn.textContent = 'TRIMITE CEREREA';
+                    setTimeout(function(){
+                        document.getElementById('alert-success').style.display = 'none';
+                        document.getElementById('alert-error').style.display = 'none';
+                    }, 8000);
+                });
+        });
+
+        // Încarcă config la start și la 30s (live update din admin)
+        incarcaConfig();
+        setInterval(incarcaConfig, 30000);
+        </script>
     </body>
 </html>
