@@ -1,0 +1,77 @@
+script:
+
+intro:
+mergi intro caruta spre satul tatalui, spui ca iti vei incepe o noua viata etc, ajungi la statie
+te duci la un magazin sa cumperi ceva de mancare si uitandute pe rafturi vezi un medalion care tii minte
+ca tata tau avea la gat, il ei si vrei sa pleci dar detinatorul te prinde si vrea sa cheme politia
+(aici putem pune un tutorial de fightin) il bati si il lasi inconstient (de la el ai sa faci tutorial), 
+te inbraci in hainele lui si il arunci in pivnita, uitandute la medalion iti dai seama ca de fapt 
+nu era a lu tactu.
+
+aici deja va urma timpul de tutorial.
+vor fi 7 zile/saptamana, si fiecare sezon a sa dureze 6 saptamani (2 sezoane, vara/iarna 
+ca in antichitate), ceasul va merge ca un sundial, fiecare duminica va fi ilegal sa lucrezi, daca 
+lucrezi esti arestat si death o sa fie 7 (sau mai multi) npc importanti toti care vin intr-o zi 
+specifica lor (duminica preotu, luni sefu) asemenea o sa fie si zile importante/evenimente, cand 
+aceste evenimente se intampla in ziua aceea nu vine  npc-ul, fiecare npc o sa aiba un quest specific 
+lor cu care trebuie sa te confrunti,
+
+Primul lucru de ocupat,
+Gabi: designul interior si caselor, obiectelor
+Radu: ui/ux (crafting recipe/setari/text box/tech tree)
+Ilie: se ocupa de caracter/npc/monstri (cum a sa mearga/hitbox/hurtbox)
+Mihai: designul la caracter, npc.
+
+Dupa ce primele lucruri sau facut:
+Gabi: muzica/sfx
+Radu: cont de insta si apuca de arata joaca si sa implementezi ce va cere lumea
+Ilie: Interactiunea cu npc-urile (cand e aproape sa poate vb, textu prezentat, istoria) si progresia zilei
+Mihai: efecte si ux/ui design ( particule cand ai baut potiuni/cand bati pe cineva etc)'
+
+
+tilemap:
+
+    floor:
+        oak ✓
+        oak dameged
+        dark wood ✓
+        dark wood damaged
+        full carpet ✓
+        full carpet damaged
+        carpet layer ✓
+        carpet layer damaged
+        stone ✓
+        stone damaged
+        marble ✓
+        marble damaged
+        full grass ✓
+        spotty grass 
+        burned grass 
+        dirt ✓
+        sand ✓
+        mud ✓
+        burned land        cliff_floor layer
+        water layer
+        mudded water layer
+        dirt path layer
+        paved path layer
+    wall
+        cliff_wall
+        stone
+        stone damaged
+        stone fence 
+        stone fence damaged
+        oak
+        oak damaged
+        oak fence
+        oak fence damaged
+        dark wood
+        dark wood damaged
+        dark wood fence
+        dark wood fence dameged
+        marble 
+        marble damaged
+        marble fence
+        marble fence damaged
+
+        
